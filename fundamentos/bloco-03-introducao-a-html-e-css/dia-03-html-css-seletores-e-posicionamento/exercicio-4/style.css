@@ -1,0 +1,59 @@
+ol {
+  background-color: yellow;
+}
+
+h1, h2, h3 {
+  color: red;
+}
+
+h1 em, h2 em, h3 em {
+    font-size: 40px;
+}
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
+}
+
+ul li a:hover {
+    font-weight: bold;
+  }
+
+.Item-par {
+  color: green;
+}
+
+.Item-impar {
+    text-transform: uppercase
+}
+
+.Item-ling {
+    color: blue;
+}
+
+.java {
+    background-color: pink;
+}
+
+.Stack:hover {
+    color: orange;
+}
+
+.W3Schools:hover {
+    color:green
+}
+
+.MDN:hover {
+    color: black;
+}
+
+.DevDocs:hover {
+    color:yellow
+}
+
+.Trybe:hover {
+    color: green;
+}
