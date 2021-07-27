@@ -1,0 +1,105 @@
+body {
+    background-color: aquamarine;
+}
+
+header {
+    background-color: rgb(61, 235, 148);
+}
+
+nav {
+    background-color: #07e0c3;
+}
+
+nav a:hover {
+    background-color: aquamarine;
+    font-weight: bold;
+  }
+
+nav ul li{
+    display: inline-block;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+article {
+  background-color: rgba(119, 224, 189, 0.418);
+}
+
+a {
+    color: black
+}
+
+section#section-bibliografia a:hover {
+  background-color: aqua;
+  font-weight: bold;
+  color: blue;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+#info {
+    background-color: rgb(176, 255, 229);
+    border: 2px solid black;
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+    float: right;
+    margin-left: 20px;
+}
+
+#table1 {
+    vertical-align: top;
+    text-align: left;
+    display: inline-block;
+    list-style: none;
+    font-weight: bold;
+}
+
+#table2 {
+    vertical-align: top;
+    text-align: left;
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+#section1{
+    width: 70%;
+}
+
+#section2 {
+    width: 100%;
+    background-color: aquamarine;
+}
+
+#section3 {
+    width: 100%;
+}
+
+#section-bibliografia {
+    background-color: aquamarine;
+}
+
+#section-extra {
+    display: inline-block;
+    width: 100%;
+}
+
+#mantispower {
+    float: right;
+    display: inline-block;
+    width: 30%;
+    margin-left: 15px;
+}
+
+#mantisextra {
+    width: 65%;
+    display: inline-block;
+}
