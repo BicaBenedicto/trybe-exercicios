@@ -40,3 +40,17 @@ if (medidaAritmeticaNumbers > 20) {
 else {
   console.log("Valor menor ou igual a 20");
 }
+
+console.log(" ");
+console.log("Exercicio 5");
+console.log(" ");
+
+let maiorNumber = 0;
+for (let indexNumbers = 0; indexNumbers < numbers.length; indexNumbers += 1) {
+  if (maiorNumber < numbers[indexNumbers]) {
+    maiorNumber = numbers[indexNumbers];
+  }
+
+}
+
+console.log(maiorNumber);
