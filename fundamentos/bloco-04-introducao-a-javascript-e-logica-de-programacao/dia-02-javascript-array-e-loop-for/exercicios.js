@@ -77,3 +77,16 @@ else {
   }
 }
 
+console.log(" ");
+console.log("Exercicio 7");
+console.log(" ");
+
+let menorNumber = maiorNumber;
+
+for (let indexNumbers = 0; indexNumbers < numbers.length; indexNumbers += 1) {
+  if (menorNumber > numbers[indexNumbers]) {
+    menorNumber = numbers[indexNumbers];
+  }
+}
+
+console.log(menorNumber);
