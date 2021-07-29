@@ -104,3 +104,17 @@ for (let index = 1; index < 26; index += 1) {
 for (let imprimirArray of array) {
   console.log(imprimirArray);
 }
+
+console.log(" ");
+console.log("Exercicio 9");
+console.log(" ");
+
+let divisaoArray = [];
+
+for (let index = 0; index < array.length; index += 1) {
+  divisaoArray.push(array[index] / 2);
+}
+
+for (let imprimirDivisaoArray of divisaoArray) {
+  console.log(imprimirDivisaoArray);
+}
