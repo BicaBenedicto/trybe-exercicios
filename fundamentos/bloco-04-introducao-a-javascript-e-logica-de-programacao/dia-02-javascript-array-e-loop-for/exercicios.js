@@ -54,3 +54,26 @@ for (let indexNumbers = 0; indexNumbers < numbers.length; indexNumbers += 1) {
 }
 
 console.log(maiorNumber);
+
+console.log(" ");
+console.log("Exercicio 6");
+console.log(" ");
+
+let impares = [];
+
+for (let indexNumbers = 0; indexNumbers < numbers.length; indexNumbers += 1) {
+  if (numbers[indexNumbers] % 2 > 0) {
+    impares.push(numbers[indexNumbers]);
+  }
+}
+
+if (impares[0] == null) {
+  console.log("nenhum valor ímpar encontrado");
+}
+
+else {
+  for (let imprimirImpares of impares) {
+    console.log(imprimirImpares);
+  }
+}
+
