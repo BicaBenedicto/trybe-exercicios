@@ -90,3 +90,17 @@ for (let indexNumbers = 0; indexNumbers < numbers.length; indexNumbers += 1) {
 }
 
 console.log(menorNumber);
+
+console.log(" ");
+console.log("Exercicio 8");
+console.log(" ");
+
+let array = [];
+
+for (let index = 1; index < 26; index += 1) {
+  array.push(index);
+}
+
+for (let imprimirArray of array) {
+  console.log(imprimirArray);
+}
