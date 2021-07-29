@@ -23,3 +23,20 @@ console.log(" ");
 console.log("Exercicio 3");
 console.log(" ");
 
+let medidaAritmeticaNumbers = 0;
+
+medidaAritmeticaNumbers = somaNumbers / numbers.length;
+
+console.log(medidaAritmeticaNumbers);
+
+console.log(" ");
+console.log("Exercicio 4");
+console.log(" ");
+
+if (medidaAritmeticaNumbers > 20) {
+  console.log("Valor maior que 20");
+}
+
+else {
+  console.log("Valor menor ou igual a 20");
+}
