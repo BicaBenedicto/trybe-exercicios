@@ -24,17 +24,29 @@ console.log(" ");
 for (let index = 0; index < n; index += 1) {
   let imp = " ";
   
-  if (index < 5) {
-    
-    for (linha = 0; linha < index + 1; linha += 1) {
+      for (let linha = 0; linha < index + 1; linha += 1) {
     imp = imp + "*";
     }
   console.log(imp);
   
-  }
-
-  else {
-    console.log("erro");
-  }
 }
 
+console.log(" ");
+console.log("Exercicio 3");
+console.log(" ");
+
+for (let index = 0; index < n; index += 1) {
+  let imp = " ";
+
+      for (let linha = 4; linha > index; linha -= 1) {
+        imp = imp + " ";
+      }
+
+      for (let linha = 0; linha < index + 1; linha += 1) {
+        imp = imp + "*";
+      }
+      
+    
+  
+  console.log(imp);
+}
