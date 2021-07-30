@@ -118,3 +118,51 @@ for (let index = 0; index < array.length; index += 1) {
 for (let imprimirDivisaoArray of divisaoArray) {
   console.log(imprimirDivisaoArray);
 }
+
+console.log(" ");
+console.log("Exercicio Bonus");
+console.log(" ");
+
+let multiNumbers = [];
+
+for (let index = 0; index < numbers.length; index += 1) {
+  if (index < numbers.length - 1) {
+    multiNumbers.push(numbers[index] * numbers[index + 1]);
+  }
+  else {
+    multiNumbers.push(numbers[index] * 2);
+  }
+  
+}
+
+console.log("Multiplicação dos Numbers: " + multiNumbers);
+console.log("");
+
+let numbersSort = numbers;
+
+for (let index = 1; index < numbersSort.length; index += 1) {
+  for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+    if (numbersSort[index] < numbersSort[secondIndex]) {
+      let position = numbersSort[index];
+      numbersSort[index] = numbersSort[secondIndex];
+      numbersSort[secondIndex] = position;
+    }
+  }
+}
+
+console.log("Crescente: " + numbersSort);
+console.log(" ");
+
+for (let index = 1; index < numbersSort.length; index += 1) {
+  for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+    if (numbersSort[index] > numbersSort[secondIndex]) {
+      let position = numbersSort[index];
+      numbersSort[index] = numbersSort[secondIndex];
+      numbersSort[secondIndex] = position;
+    }
+  }
+}
+
+console.log("Decrescente: " + numbersSort);
+console.log("");
+
