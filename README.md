@@ -8,6 +8,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 Por ser um estudante ainda, muitos blocos e projetos não foram realizados, sendo atualizados semanalmente durante o desenvolvimento do curso e meu progresso por aqui.
 
+Os códigos utilizados nos projetos, estarão disponiveis na pasta "Projetos" no Github Pages, [Clique aqui](https://github.com/BicaBenedicto/BicaBenedicto.github.io)
+
 ## Fundamentos do Desenvolvimento Web :hourglass_flowing_sand: 
 
 ##### Bloco 1: Introdução - Unix & Shell
@@ -25,15 +27,15 @@ Por ser um estudante ainda, muitos blocos e projetos não foram realizados, send
 
 - [X] 3-1: _HTML & CSS - Estruturas de página_
 - [X] 3-2: _HTML & CSS - Primeiros passos em CSS_
-- [ ] 3-3: _HTML & CSS - Seletores e posicionamento_
-- [ ] 3-4: _HTML Semântico_
-- [ ] 3-5: _[Projeto - Lessons Learned]()_:hourglass_flowing_sand: 
+- [X] 3-3: _HTML & CSS - Seletores e posicionamento_
+- [X] 3-4: _HTML Semântico_
+- [X] 3-5: _[Projeto - Lessons Learned](https://bicabenedicto.github.io/projetos/lessons-learned/)_
 
 ##### Bloco 4: Introdução - JavaScript
 
-- [ ] 4-1: _JavaScript - Primeiros passos_
-- [ ] 4-2: _JavaScript - Array e loop For_
-- [ ] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
+- [X] 4-1: _JavaScript - Primeiros passos_
+- [X] 4-2: _JavaScript - Array e loop For_
+- [X] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [ ] 4-4: _JavaScript - Objetos e funções_
 - [ ] 4-5: _[Projeto - Playground Functions]()_:hourglass_flowing_sand: 
 
