@@ -16,6 +16,8 @@ for (let index = 0; index < n; index += 1) {
   console.log(imp);
 }
 
+//Exercicio 2
+
 console.log(" ");
 console.log("Exercicio 2");
 console.log(" ");
@@ -32,6 +34,8 @@ for (let index = 0; index < n; index += 1) {
 
   console.log(imp);
 }
+
+//Exercicio 3
 
 console.log(" ");
 console.log("Exercicio 3");
@@ -51,6 +55,8 @@ for (let index = 0; index < n; index += 1) {
  
   console.log(imp);
 }
+
+//Exercicio 4
 
 console.log(" ");
 console.log("Exercicio 4");
@@ -72,6 +78,8 @@ for (let index = 0; index < n; index += 1) {
     console.log(imp);
   }
 }
+
+//Exercicio 5 - Bonus
 
 console.log(" ");
 console.log("Bonus");
@@ -112,3 +120,22 @@ for (let index = 0; index < n; index += 1) {
   }
   
 }
+
+//Exercicio 6 - Bonus
+
+console.log(" ");
+console.log("Bonus");
+console.log("Exercicio 6");
+console.log(" ");
+
+  if (n / 1 === n && n / n === 1 && n % 2 !== 0 && n % 3 !== 0 && n % 5 !== 0) {
+    console.log(n + " é um número primo.");
+  }
+
+  else if (n === 2 || n === 3 || n === 5) {
+    console.log(n + " é um número primo.");
+  }
+  
+  else {
+    console.log (n + " não é um número primo.");
+  }
