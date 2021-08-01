@@ -1,6 +1,6 @@
 //Exercicio 1
 
-let n = 7;
+let n = 12;
 
 
 console.log("Exercicio 1");
@@ -127,6 +127,42 @@ console.log(" ");
 console.log("Bonus");
 console.log("Exercicio 6");
 console.log(" ");
+
+let primo = false;
+
+for (index = 2; index <= n; index += 1) {
+  
+  if (n / index === 1 && index / 1 === n) {
+    if (n % 2 > 0 && n % 3 > 0 && n % 5 > 0) {
+      primo = true;
+    }
+
+    else {
+      primo = false;
+    }
+  }
+
+  else {
+    primo = false;
+  }
+
+  if (n === 2 || n === 3 || n == 5) {
+    primo = true;
+  }
+}
+
+console.log("Utilizando for: ");
+
+if (primo === true) {
+  console.log(n + " é um número primo.");
+}
+
+else {
+  console.log (n + " não é um número primo.");
+}
+
+console.log ("");
+console.log ("Utilizando if/else: ");
 
   if (n / 1 === n && n / n === 1 && n % 2 !== 0 && n % 3 !== 0 && n % 5 !== 0) {
     console.log(n + " é um número primo.");
