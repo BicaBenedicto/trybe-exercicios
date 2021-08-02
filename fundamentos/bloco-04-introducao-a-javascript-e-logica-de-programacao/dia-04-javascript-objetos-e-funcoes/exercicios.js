@@ -41,3 +41,15 @@ let names = {
 for (let show in names) {
   console.log("Olá " + names[show]);
 }
+
+//Exercicio 7 - For/in
+
+let car = {
+  model: 'A3 Sedan',
+  manufacturer: 'Audi',
+  year: 2020
+};
+
+for (let show in car) {
+  console.log(show, car[show]);
+}
