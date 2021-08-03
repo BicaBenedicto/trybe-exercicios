@@ -57,3 +57,34 @@ function maisLetras (valores) {
 }
 
 maisLetras(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']);
+
+//Exercicio 5 (Não terminado)
+
+function maiorRepeticao (valores) {
+  let maiorRepeticao = 0; 
+  for(let index = 0; index < valores.length; index += 1){
+    let drawNumber = valores[index];
+    for(let index2 = 0; index2 < valores.length; index2 += 1){
+      let valoresRepete = valores[index2];
+      if(valoresRepete === drawNumber){
+        maiorRepeticao = valoresRepete;
+      }
+    }
+  }
+  return console.log(maiorRepeticao);
+}
+
+maiorRepeticao([2, 3, 2, 5, 8, 2, 3]);
+
+
+//Exercicio 6
+
+function somatoria (n) {
+  let sum = 0;
+  for (let index = 0; index <= n; index += 1) {
+    sum += index;
+  }
+  return console.log(sum);
+}
+
+somatoria(5);
