@@ -21,9 +21,8 @@ let valoresArray = [2, 3, 6, 7, 10, 1];
 function maiorValor () {
   let maiorValor = 0;
   let valores = valoresArray;
-  valoresArray.join(valores)
-  for (let index of valores) {
-    if (index > maiorValor) {
+  for (let index in valores) {
+    if (valores[index] > maiorValor) {
         maiorValor = index;
       }
     
@@ -32,3 +31,20 @@ function maiorValor () {
 }
 
 maiorValor();
+
+//Exercicio 3
+
+let valoresArray2 = [2, 4, 6, 7, 10, 0, -3];
+
+function menorValor () {
+  let menorValor = 100;
+  let valores = valoresArray2;
+  for (let index in valores) {
+    if (valores[index] < menorValor) {
+      menorValor = index;
+    }
+  }
+  return console.log(menorValor);
+}
+
+menorValor();
