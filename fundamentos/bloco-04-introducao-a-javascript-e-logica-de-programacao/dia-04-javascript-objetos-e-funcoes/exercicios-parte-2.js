@@ -16,11 +16,9 @@ if (palavra === palindromo) {
 console.log(palindromo("arara"));
 
 //Exercicio 2
-let valoresArray = [2, 3, 6, 7, 10, 1];
 
-function maiorValor () {
+function maiorValor (valores) {
   let maiorValor = 0;
-  let valores = valoresArray;
   for (let index in valores) {
     if (valores[index] > maiorValor) {
         maiorValor = index;
@@ -30,15 +28,12 @@ function maiorValor () {
   return console.log(maiorValor);
 }
 
-maiorValor();
+maiorValor([2, 3, 6, 7, 10, 1]);
 
 //Exercicio 3
 
-let valoresArray2 = [2, 4, 6, 7, 10, 0, -3];
-
-function menorValor () {
+function menorValor (valores) {
   let menorValor = 100;
-  let valores = valoresArray2;
   for (let index in valores) {
     if (valores[index] < menorValor) {
       menorValor = index;
@@ -47,4 +42,18 @@ function menorValor () {
   return console.log(menorValor);
 }
 
-menorValor();
+menorValor([2, 4, 6, 7, 10, 0, -3]);
+
+//Exercicio 4
+
+function maisLetras (valores) {
+  let maisLetras = " ";
+  for (let index of valores) {
+    if (index.length > maisLetras.length) {
+      maisLetras = index;
+    }
+  }
+  return console.log(maisLetras);
+}
+
+maisLetras(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']);
