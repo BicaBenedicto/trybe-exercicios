@@ -14,3 +14,8 @@ info ["recorrente"] = "Sim";
 
 console.log(info);
 
+//Exercicio 3
+
+for (let show in info) {
+  console.log(show);
+}
