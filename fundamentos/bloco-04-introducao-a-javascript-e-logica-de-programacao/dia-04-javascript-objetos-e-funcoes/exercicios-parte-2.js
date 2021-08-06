@@ -53,25 +53,32 @@ function maisLetras (valores) {
 //Exercicio 5 (Não terminado)
 
 function maiorRepeticao (valores) {
-  let count = 0;
-  let numero = 0;
-  let numeroValidar = 0;
-  for(let key of valores){
-    if (count > 1) {    
-      if (numeroValidar === 0) {
-        numeroValidar = key;
-      }
-      else {
-        numero = key;
-      }
+  let count = {};
+  for (let key of valores) {
+    if(count[key]) {
+      count[key] += 1
+    } else {
+      count[key] = 1;
+    }
   }
-  let output = numeroValidar > numero; Object.
-  return output;
+  let valor1 = 0;
+  let valor2 = 0;
+  for (let key of valores) {
+    if (count[key] > 1 && valor1 === 0) {
+      valor1 = key;
+    }
+    else if (count[key] > 1 && count[key] !== valor1) {
+      valor2 = key;
+    }
+  }
+  let compareValor = 0;
+  if (Object.values(valor1) > Object.values(valor2)) {
+    compareValor = valor1;
+  } else {
+    compareValor = valor2;
+  }
+  return compareValor;
 }
-}
-
-console.log(maiorRepeticao([1,2, 3, 2, 5, 8, 2, 3]));
-
 
 //Exercicio 6
 
@@ -88,5 +95,3 @@ function somatoria (n) {
 function verificaFimPalavra (word, ending) {
   return word.endsWith(ending);
 }
-
-console.log(verificaFimPalavra('trybe', 'be'));
