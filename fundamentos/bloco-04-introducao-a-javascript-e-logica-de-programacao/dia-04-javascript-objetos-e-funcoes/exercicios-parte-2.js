@@ -13,8 +13,6 @@ if (palavra === palindromo) {
 }
 }
 
-console.log(palindromo("arara"));
-
 //Exercicio 2
 
 function maiorValor (valores) {
@@ -28,8 +26,6 @@ function maiorValor (valores) {
   return console.log(maiorValor);
 }
 
-maiorValor([2, 3, 6, 7, 10, 1]);
-
 //Exercicio 3
 
 function menorValor (valores) {
@@ -41,8 +37,6 @@ function menorValor (valores) {
   }
   return console.log(menorValor);
 }
-
-menorValor([2, 4, 6, 7, 10, 0, -3]);
 
 //Exercicio 4
 
@@ -56,62 +50,27 @@ function maisLetras (valores) {
   return console.log(maisLetras);
 }
 
-maisLetras(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']);
-
 //Exercicio 5 (Não terminado)
 
 function maiorRepeticao (valores) {
-  let maiorRepeticao = 0; 
-  for(let index = 0; index < valores.length; index += 1){
-    let drawNumber = valores[index];
-    for(let index2 = 0; index2 < valores.length; index2 += 1){
-      let valoresRepete = valores[index2];
-      if(valoresRepete === drawNumber){
-        maiorRepeticao = valoresRepete;
+  let count = 0;
+  let numero = 0;
+  let numeroValidar = 0;
+  for(let key of valores){
+    if (count > 1) {    
+      if (numeroValidar === 0) {
+        numeroValidar = key;
       }
-    }
+      else {
+        numero = key;
+      }
   }
-  return console.log(maiorRepeticao);
+  let output = numeroValidar > numero; Object.
+  return output;
+}
 }
 
-maiorRepeticao([2, 3, 2, 5, 8, 2, 3]);
-
-let array = [0, 4, 4, 4, 9, 2, 1];
-
-function moreFrequentNumber(array) {
-  let numbers = [];
-
-  for (let index of array) {
-    cont = checkNumber(numbers, index);
-   if (cont === 0) {
-      numbers.push(index);
-    }
-  }
-  return checkRepeated(numbers, array);
-}
-function checkNumber(array, n) {
- let cont = 0;
-  for (let number of array) {
-    if (n === number) {
-      cont += 1;
-    }
-  }
-  return cont;
-}
-function checkRepeated(numerosParaChecar, vetorDeNumerosOriginal) {
-  let moreFrequent = 0;
-  let moreFrequentRep = 0;
-  for (let i in numerosParaChecar) {
-    let rep = checkNumber(vetorDeNumerosOriginal, numerosParaChecar[i]);
-    if (rep > moreFrequentRep) {
-      moreFrequent = numerosParaChecar[i];
-      moreFrequentRep = rep;
-    }
-  }
-  return moreFrequent;
-}
-
-console.log(moreFrequentNumber(array));
+console.log(maiorRepeticao([1,2, 3, 2, 5, 8, 2, 3]));
 
 
 //Exercicio 6
@@ -124,4 +83,10 @@ function somatoria (n) {
   return console.log(sum);
 }
 
-somatoria(5);
+//Exercicio 7
+
+function verificaFimPalavra (word, ending) {
+  return word.endsWith(ending);
+}
+
+console.log(verificaFimPalavra('trybe', 'be'));
