@@ -29,7 +29,7 @@ Os códigos utilizados nos projetos, estarão disponiveis na pasta "Projetos" no
 - [X] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [X] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [X] 3-4: _HTML Semântico_
-- [X] 3-5: _[Projeto - Lessons Learned](https://bicabenedicto.github.io/projetos/lessons-learned/)_[(Código)](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/lessons-learned)
+- [X] 3-5: _[Projeto - Lessons Learned](https://bicabenedicto.github.io/projetos/lessons-learned/)_     [(Código)](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/lessons-learned)
 
 ##### Bloco 4: Introdução - JavaScript
 
