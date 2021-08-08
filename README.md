@@ -37,7 +37,7 @@ Os códigos utilizados nos projetos, estarão disponiveis na linha do Projeto, c
 - [X] 4-2: _JavaScript - Array e loop For_
 - [X] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [X] 4-4: _JavaScript - Objetos e funções_
-- [X] 4-5: _[Projeto - Playground Functions](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/playground-functions)_:hourglass_flowing_sand: 
+- [X] 4-5: _[Projeto - Playground Functions](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/playground-functions)_
 
 ##### Bloco 5: Introdução - JavaScript - Projetos
 
