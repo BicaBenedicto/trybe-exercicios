@@ -8,7 +8,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 Por ser um estudante ainda, muitos blocos e projetos não foram realizados, sendo atualizados semanalmente durante o desenvolvimento do curso e meu progresso por aqui.
 
-Os códigos utilizados nos projetos, estarão disponiveis na pasta "Projetos" no Github Pages, [Clique aqui](https://github.com/BicaBenedicto/BicaBenedicto.github.io)
+Os códigos utilizados nos projetos, estarão disponiveis na linha do Projeto, caso o mesmo tenha uma página visual, o código será disponibilizado ao lado com o nome "(Código)".
 
 ## Fundamentos do Desenvolvimento Web :hourglass_flowing_sand: 
 
