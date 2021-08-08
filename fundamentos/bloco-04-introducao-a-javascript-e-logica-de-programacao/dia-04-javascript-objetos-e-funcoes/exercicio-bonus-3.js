@@ -41,5 +41,3 @@ function cestaDeCompras (cesta) {
   }
   return output + output2.join('');
 }
-
-console.log(cestaDeCompras());

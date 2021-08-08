@@ -11,6 +11,3 @@ function arrayOfNumbers(vetor) {
   }
   return output;
 }
-
-
-console.log(arrayOfNumbers());
