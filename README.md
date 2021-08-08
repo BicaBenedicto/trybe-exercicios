@@ -29,15 +29,15 @@ Os códigos utilizados nos projetos, estarão disponiveis na pasta "Projetos" no
 - [X] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [X] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [X] 3-4: _HTML Semântico_
-- [X] 3-5: _[Projeto - Lessons Learned](https://bicabenedicto.github.io/projetos/lessons-learned/)_
+- [X] 3-5: _[Projeto - Lessons Learned](https://bicabenedicto.github.io/projetos/lessons-learned/)-[Projeto - Lessons Learned (Código)](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/lessons-learned)_
 
 ##### Bloco 4: Introdução - JavaScript
 
 - [X] 4-1: _JavaScript - Primeiros passos_
 - [X] 4-2: _JavaScript - Array e loop For_
 - [X] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
-- [ ] 4-4: _JavaScript - Objetos e funções_
-- [ ] 4-5: _[Projeto - Playground Functions]()_:hourglass_flowing_sand: 
+- [X] 4-4: _JavaScript - Objetos e funções_
+- [X] 4-5: _[Projeto - Playground Functions](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/playground-functions)_:hourglass_flowing_sand: 
 
 ##### Bloco 5: Introdução - JavaScript - Projetos
 
