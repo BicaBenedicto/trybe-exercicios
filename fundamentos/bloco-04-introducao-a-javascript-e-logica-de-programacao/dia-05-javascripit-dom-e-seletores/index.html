@@ -54,9 +54,9 @@
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
   */
-       document.querySelector("p").innerText = "Casado, com minha casa própia, viajando o mundos sempre que possível e me aventurando, programando muito tambem!";
-       document.querySelectorAll(".main-content")[0].style.backgroundColor = "rgb(76,164,109)";
-       document.querySelector(".main-content .center-content").style.backgroundColor = "white";
+       document.getElementsByTagName("p")[0].innerText = "Casado, com minha casa própia, viajando o mundos sempre que possível e me aventurando, programando muito tambem!";
+       document.getElementsByClassName("main-content")[0].style.backgroundColor = "rgb(76,164,109)";
+       document.getElementsByClassName("center-content")[0].style.backgroundColor = "white";
     </script>
   </body>
 </html>
