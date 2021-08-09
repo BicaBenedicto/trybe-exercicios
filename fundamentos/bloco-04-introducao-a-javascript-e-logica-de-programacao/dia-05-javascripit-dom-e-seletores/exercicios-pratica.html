@@ -8,18 +8,19 @@
       <p id="second-paragraph" class="paragraph">Segundo parágrafo!</p>
     </header>
     <script>
-      const paragraph = document.getElementById("paragraph");
+      const paragraph = document.querySelectorAll("#paragraph")[0];
       paragraph.style.color = "red";
-      document.getElementById("page-title").innerHTML = "Gênio indomável";
-      let secondParagraph = document.getElementById("second-paragraph");
+      document.querySelectorAll("#page-title")[0].innerHTML = "Gênio indomável";
+      let secondParagraph = document.querySelectorAll("#second-paragraph")[0];
       secondParagraph.innerHTML = "Filme com drama, reflexão, evolução, romance e briga";
       secondParagraph.style.color = "blue";
       secondParagraph.style.fontWeight = "bold";
-      let subtitle = document.getElementById("subtitle");
+      let subtitle = document.querySelectorAll("#subtitle")[0];
       subtitle.innerHTML = "Filme favorito";
-      let paragraphList = document.getElementsByClassName("paragraph");
+      let paragraphList = document.querySelectorAll(".paragraph");
       paragraphList[0].style.fontSize = "30px";
-      document.getElementsByTagName("h4")[0].style.color = "green";
+      let h4 = document.querySelectorAll("h4");
+      h4[0].style.color = "green";
     </script>
   </body>
 </html>
