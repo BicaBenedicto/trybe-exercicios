@@ -51,8 +51,8 @@
  Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)). Feito
  Crie uma função que mude a cor do quadrado vermelho para branco. Feito
  Crie uma função que corrija o texto da tag <h1>. Feito
- Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
- Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+ Crie uma função que modifique todo o texto da tag <p> para maiúsculo. Feito
+ Crie uma função que exiba o conteúdo de todas as tags <p> no console. Feito
   */
        document.getElementsByTagName("p")[0].innerText = "Casado, com minha casa própia, viajando o mundos sempre que possível e me aventurando, programando muito tambem!";
        document.getElementsByClassName("main-content")[0].style.backgroundColor = "rgb(76,164,109)";
@@ -60,7 +60,8 @@
        document.getElementsByTagName("h1")[0].innerText = "Exercício 5.1 - JavaScript";
        for (let i in document.getElementsByTagName("p")) {
        document.getElementsByTagName("p")[i].style.textTransform = "uppercase";
-       }
+       console.log(document.getElementsByTagName("p")[i].innerText);
+      }
     </script>
   </body>
 </html>
