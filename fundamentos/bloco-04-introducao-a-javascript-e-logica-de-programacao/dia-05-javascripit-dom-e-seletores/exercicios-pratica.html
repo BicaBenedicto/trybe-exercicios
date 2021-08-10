@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph" class="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph" class="paragraph">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraph = document.querySelectorAll("#paragraph")[0];
+      paragraph.style.color = "red";
+      document.querySelectorAll("#page-title")[0].innerHTML = "Gênio indomável";
+      let secondParagraph = document.querySelectorAll("#second-paragraph")[0];
+      secondParagraph.innerHTML = "Filme com drama, reflexão, evolução, romance e briga";
+      secondParagraph.style.color = "blue";
+      secondParagraph.style.fontWeight = "bold";
+      let subtitle = document.querySelectorAll("#subtitle")[0];
+      subtitle.innerHTML = "Filme favorito";
+      let paragraphList = document.querySelectorAll(".paragraph");
+      paragraphList[0].style.fontSize = "30px";
+      let h4 = document.querySelectorAll("h4");
+      h4[0].style.color = "green";
+    </script>
+  </body>
+</html>
