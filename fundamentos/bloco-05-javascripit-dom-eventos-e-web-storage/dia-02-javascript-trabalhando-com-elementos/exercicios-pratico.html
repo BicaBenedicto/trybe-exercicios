@@ -18,5 +18,16 @@
     document.querySelector("#elementoOndeVoceEsta").nextSibling;
     document.querySelector("#elementoOndeVoceEsta").nextElementSibling;
     document.querySelector("#pai").lastElementChild.previousElementSibling;
+    let pai = document.querySelector("#elementoOndeVoceEsta").parentNode;
+    let irmaoElementoOndeVoceEsta = document.createElement("h3");
+    irmaoElementoOndeVoceEsta.innerHTML = "Irmao do Elemento Onde Voce Esta";
+    pai.appendChild(irmaoElementoOndeVoceEsta);
+    let filhoElementoOndeVoceEsta = document.createElement("h5");
+    filhoElementoOndeVoceEsta.innerText = "Filho do Elemento Onde Voce Esta";
+    document.querySelector("#elementoOndeVoceEsta").appendChild(filhoElementoOndeVoceEsta);
+    let filhoDoPrimeiroFilhoDoFilho = document.createElement("div");
+    filhoDoPrimeiroFilhoDoFilho.innerText = "Filho do Primeiro Filho do Filho";
+    document.querySelector("#primeiroFilhoDoFilho").appendChild(filhoDoPrimeiroFilhoDoFilho);
+    document.querySelector("div").parentNode.parentNode.nextElementSibling;
   </script>
 </main>
