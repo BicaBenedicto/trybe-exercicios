@@ -58,10 +58,17 @@
   <body>
     <script>
       // Exercicio 1
+      let body = document.getElementsByTagName("body")[0];
 
-      let h1Body = document.createElement("h1");
-      h1Body.innerHTML = "Exercícios 5.2 - JavaScript DOM";
-      document.body.appendChild(h1Body);
+      let h1Body = document.createElement("h1")
+      h1Body.innerHTML = "Exercícios 5.2 - JavaScript DOM"; 
+      body.appendChild(h1Body);
+
+      //Exercicio 2
+
+      let main = document.createElement("main")
+      main.className = "main-content";
+      body.appendChild(main);
     </script>
   </body>
 </html>
