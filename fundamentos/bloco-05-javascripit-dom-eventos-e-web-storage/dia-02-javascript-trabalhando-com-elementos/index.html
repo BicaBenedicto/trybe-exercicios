@@ -101,6 +101,18 @@
       img.src = "https://picsum.photos/200";
       sectionLeft.appendChild(img);
 
+      //Exercicio 8
+
+      let listaNaoOrdenada = document.createElement("ul");
+      sectionRight.appendChild(listaNaoOrdenada);
+      let numeroExtenso = ["um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"];
+      
+      for(let i of numeroExtenso) {
+        let itemLista = document.createElement("li");
+        itemLista.innerText = i;
+        listaNaoOrdenada.appendChild(itemLista);
+      }
+
 
     </script>
   </body>
