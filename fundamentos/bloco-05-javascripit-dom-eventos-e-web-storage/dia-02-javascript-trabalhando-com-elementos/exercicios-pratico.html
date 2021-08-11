@@ -1,0 +1,115 @@
+<main id="paiDoPai">
+  <section id="pai">
+    <section id="primeiroFilho"></section>
+    <section id="elementoOndeVoceEsta">
+      <section id="primeiroFilhoDoFilho"></section>
+      <section id="segundoEUltimoFilhoDoFilho"></section>
+    </section>
+    Atenção!
+    <section id="terceiroFilho"></section>
+    <section id="quartoEUltimoFilho"></section>
+  </section>
+</main>
+  <script>
+    
+    //Parte I
+    //Exercicio 1
+
+    document.getElementById("elementoOndeVoceEsta");
+
+    //Exercicio 2
+
+    document.querySelector("#elementoOndeVoceEsta").parentNode.style.color = "blue";
+
+    //Exercicio 3
+
+    document.querySelector("#primeiroFilhoDoFilho").innerText = "Um texto a ele.";
+
+    //Exercicio 4
+
+    document.querySelector("#pai").firstElementChild;
+
+    //Exercicio 5
+
+    document.querySelector("#elementoOndeVoceEsta").previousElementSibling;
+
+    //Exercicio 6
+
+    document.querySelector("#elementoOndeVoceEsta").nextSibling;
+
+    //Exercicio 7
+    
+    document.querySelector("#elementoOndeVoceEsta").nextElementSibling;
+
+    //Exercicio 8
+
+    document.querySelector("#pai").lastElementChild.previousElementSibling;
+
+    //Parte II
+    //Exercicio 1
+
+    let paiElementoOndeVoceEsta = document.querySelector("#elementoOndeVoceEsta").parentNode;
+    
+    let irmaoElementoOndeVoceEsta = document.createElement("section");
+    irmaoElementoOndeVoceEsta.innerHTML = "Irmao do Elemento Onde Voce Esta";
+    paiElementoOndeVoceEsta.appendChild(irmaoElementoOndeVoceEsta);
+
+    //Exercicio 2
+    
+    let filhoElementoOndeVoceEsta = document.createElement("section");
+    filhoElementoOndeVoceEsta.innerText = "Filho do Elemento Onde Voce Esta";
+    document.querySelector("#elementoOndeVoceEsta").appendChild(filhoElementoOndeVoceEsta);
+
+    //Exercicio 3
+    
+    let filhoDoPrimeiroFilhoDoFilho = document.createElement("section");
+
+    filhoDoPrimeiroFilhoDoFilho.innerText = "Filho do Primeiro Filho do Filho";
+    filhoDoPrimeiroFilhoDoFilho.id = "filhoDoPrimeiroFilhoDoFilho";
+    document.querySelector("#primeiroFilhoDoFilho").appendChild(filhoDoPrimeiroFilhoDoFilho);
+    
+    //Exercicio 4
+
+    document.querySelector("#filhoDoPrimeiroFilhoDoFilho").parentNode.parentNode.nextElementSibling;
+
+    //Parte III
+    //Exercicio 1
+    
+    let paiDoPai = document.querySelector("#paiDoPai").
+    children;
+    let elementos = [];
+
+    for (let n of paiDoPai) {
+        checkConditions(checkElementos(n));
+    }
+    function checkElementos (elemento) {
+      for (let i of elemento.children) {
+        if (i.children.length !== 0) {
+          checkElementos2(i);
+        } else {
+          elementos.push(i);
+        }
+      }
+      return elementos;
+    }
+
+    function checkElementos2 (elemento) {
+      for (let i of elemento.children) {
+        if (i.children.length !== 0) {
+          checkElementos(i);
+        } else {
+          elementos.push(i);
+        }
+      }
+      return elementos;
+    }
+
+    function checkConditions (elementos) {
+      let elemento = elementos;
+      for (let i of elemento) {
+        if (i.id !== "elementoOndeVoceEsta" && i.id !== "primeiroFilhoDoFilho" && i.id !== "pai") {
+          i.remove();
+        }
+      }
+    }
+  </script>
