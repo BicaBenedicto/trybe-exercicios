@@ -143,9 +143,14 @@
       //Exercicio 14
 
       sectionCenter.parentElement.style.backgroundColor = "green";
+      
+      //Exercicio 15
 
-
-
+      let ultimoLista = listaNaoOrdenada.lastChild;
+      let penultimoLista = listaNaoOrdenada.lastChild.previousElementSibling;
+      ultimoLista.remove();
+      penultimoLista.remove();
+      
     </script>
   </body>
 </html>
