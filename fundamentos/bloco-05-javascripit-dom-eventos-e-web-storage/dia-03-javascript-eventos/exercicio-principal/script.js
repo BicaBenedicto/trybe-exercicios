@@ -131,10 +131,22 @@ function taskList(tarefa) {
   let taskItem = document.createElement('span');
   let taskInput = document.querySelector('#task-input');
   let taskDiv = document.querySelector('div.my-tasks');
-  
+
   taskItem.innerText =  taskInput.value;
+  taskChangeColor('salmon');
   taskItem.innerHTML += '<br>';
   taskDiv.appendChild(taskItem);
 }
 
 buttonAddTask.addEventListener('click', taskList);
+
+//Exercicio 8
+
+function taskChangeColor(cor) {
+  let taskDiv = document.createElement('div');
+  let mytaskDiv = document.querySelector('div.my-tasks');
+  
+  taskDiv.className = 'task';
+  taskDiv.style.backgroundColor = cor;
+  mytaskDiv.appendChild(taskDiv); 
+}

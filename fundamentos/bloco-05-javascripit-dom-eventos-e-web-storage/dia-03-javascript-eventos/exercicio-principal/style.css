@@ -84,6 +84,8 @@ label {
   display: inline-block;
   height: 35px;
   margin-left: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
   vertical-align: middle;
   width: 35px;
 }
