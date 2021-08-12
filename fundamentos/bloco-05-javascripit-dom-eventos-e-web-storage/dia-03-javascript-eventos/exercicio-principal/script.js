@@ -18,18 +18,18 @@ createDaysOfTheWeek();
 const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 
 
-function checkHoliday (day) {
+function checkHoliday(day) {
   if (day === 24 || day === 25 || day === 31) {
     return true;
   }
 }
 
-function checkFriday (day) {
+function checkFriday(day) {
   if (day === 4 || day === 11 || day === 18 || day === 25) {
     return true;
   }
 }
-function calendarDays () {
+function calendarDays() {
   for (let i of dezDaysList) {
     let days = document.querySelector('#days');
     let dayN = document.createElement('li');
@@ -50,12 +50,12 @@ calendarDays();
 //Exercicio 2
 
 let buttonFeriado = document.createElement('button');
+let buttonsContainer = document.querySelector('div.buttons-container');
 
-function holidayButton (Feriados) {
+function holidayButton(Feriados) {
   buttonFeriado.innerText = 'Feriados';
   buttonFeriado.id = 'btn-holiday';
 
-  let buttonsContainer = document.querySelector('div.buttons-container');
   buttonsContainer.appendChild(buttonFeriado);
 }
 
@@ -77,3 +77,15 @@ function changeBackColor() {
 }
 
 buttonFeriado.addEventListener('click', changeBackColor);
+
+//Exercicio 4
+
+let buttonFriday = document.createElement('button');
+
+function fridayButton(Sexta) {
+  buttonFriday.innerText = 'Sexta-feira';
+  buttonFriday.id = 'btn-friday';
+  buttonsContainer.appendChild(buttonFriday);
+}
+
+fridayButton()
