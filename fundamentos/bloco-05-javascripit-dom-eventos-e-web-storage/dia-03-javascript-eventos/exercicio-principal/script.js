@@ -107,3 +107,18 @@ function changeText() {
 }
 
 buttonFriday.addEventListener('click', changeText);
+
+//Exercicio 6
+
+let days = document.querySelector('#days');
+
+function zoomEffect(evento) {
+  evento.target.style.fontSize = '30px';
+}
+
+function resetZoomEffet(evento) {
+  evento.target.style.fontSize = '20px';
+}
+
+days.addEventListener('mouseover', zoomEffect);
+days.addEventListener('mouseout', resetZoomEffet);
