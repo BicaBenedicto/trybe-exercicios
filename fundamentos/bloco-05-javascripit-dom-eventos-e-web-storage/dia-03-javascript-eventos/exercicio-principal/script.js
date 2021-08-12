@@ -13,6 +13,53 @@ function createDaysOfTheWeek() {
 
 createDaysOfTheWeek();
 
+//Organização Pessoal
+
+let inputTask = document.createElement('input');
+let inputContainer = document.querySelector('div.my-tasks');
+let labelTask = document.createElement('label');
+
+inputTask.type = 'text';
+inputTask.id = 'inputTask';
+inputTask.style.display = 'inline-block';
+inputTask.style.marginLeft = 'auto';
+inputTask.style.marginRight = 'auto';
+inputTask.placeholder = 'Escreva uma tarefa';
+
+labelTask.innerText = 'Tarefa: ';
+labelTask.for = 'inputTask';
+
+inputContainer.appendChild(labelTask);
+inputContainer.appendChild(inputTask);
+
+let inputColor = document.createElement('input');
+let labelColor = document.createElement('label');
+
+inputColor.type = 'text';
+inputColor.id = 'inputColor';
+inputColor.style.display = 'inline-block';
+inputColor.style.marginLeft = 'auto';
+inputColor.style.marginRight = 'auto';
+inputColor.placeholder = 'Escreva um cor em inglês';
+
+labelColor.innerText = 'Cor: ';
+labelColor.for = 'inputColor';
+labelColor.style.marginLeft = '10px';
+
+inputContainer.appendChild(labelColor);
+inputContainer.appendChild(inputColor);
+
+let buttonAddTask = document.createElement('button');
+
+buttonAddTask.id = 'buttonAddTask';
+buttonAddTask.innerText = 'Adicionar';
+buttonAddTask.style.display = 'block';
+buttonAddTask.style.marginLeft = 'auto';
+buttonAddTask.style.marginRight = 'auto';
+inputContainer.appendChild(buttonAddTask);
+
+buttonAddTask.addEventListener('click', taskList);
+
 //Exercicio 1
 
 const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
@@ -125,11 +172,11 @@ days.addEventListener('mouseout', resetZoomEffet);
 
 //Exercicio 7
 
-let buttonAddTask = document.querySelector('#btn-add');
+let buttonAddComp = document.querySelector('#btn-add');
 
 function taskList(tarefa) {
   let taskItem = document.createElement('span');
-  let taskInput = document.querySelector('#task-input');
+  let taskInput = document.querySelector('#inputTask');
   let taskDiv = document.querySelector('div.my-tasks');
 
   taskItem.innerText =  taskInput.value;
@@ -138,7 +185,6 @@ function taskList(tarefa) {
   taskDiv.appendChild(taskItem);
 }
 
-buttonAddTask.addEventListener('click', taskList);
 
 //Exercicio 8
 
@@ -164,16 +210,7 @@ function taskSelect(evento) {
   }
 }
 
-//Exercicio 10
-
-let inputColor = document.createElement('input');
-let inputContainer = document.querySelector('div.input-container');
-inputColor.type = 'text';
-inputColor.style.display = 'block';
-inputColor.style.marginLeft = 'auto';
-inputColor.style.marginRight = 'auto';
-inputColor.placeholder = 'Escreva um cor em inglês para o compromisso';
-inputContainer.appendChild(inputColor);
+//Exercicio 10 + Organização
 
 function changeColorDay(evento) {
   let taskSelected = document.querySelectorAll('.task-selected');
@@ -188,4 +225,9 @@ function changeColorDay(evento) {
 }
 
 days.addEventListener('click', changeColorDay);
+
+
+//Exercicio Bonus
+
+
 
