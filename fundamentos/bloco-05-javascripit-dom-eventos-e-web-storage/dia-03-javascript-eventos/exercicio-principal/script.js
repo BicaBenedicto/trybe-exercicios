@@ -133,7 +133,7 @@ function taskList(tarefa) {
   let taskDiv = document.querySelector('div.my-tasks');
 
   taskItem.innerText =  taskInput.value;
-  taskChangeColor('salmon');
+  taskChangeColor(inputColor.value);
   taskItem.innerHTML += '<br>';
   taskDiv.appendChild(taskItem);
 }
@@ -163,3 +163,29 @@ function taskSelect(evento) {
     evento.target.classList.remove('task-selected');
   }
 }
+
+//Exercicio 10
+
+let inputColor = document.createElement('input');
+let inputContainer = document.querySelector('div.input-container');
+inputColor.type = 'text';
+inputColor.style.display = 'block';
+inputColor.style.marginLeft = 'auto';
+inputColor.style.marginRight = 'auto';
+inputColor.placeholder = 'Escreva um cor em inglês para o compromisso';
+inputContainer.appendChild(inputColor);
+
+function changeColorDay(evento) {
+  let taskSelected = document.querySelectorAll('.task-selected');
+
+  if (!evento.target.style.color) {
+    for (let i of taskSelected) {
+      evento.target.style.color = i.style.backgroundColor;
+    }
+  } else {
+    evento.target.style.color = '';
+  }
+}
+
+days.addEventListener('click', changeColorDay);
+

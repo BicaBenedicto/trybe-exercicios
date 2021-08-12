@@ -95,6 +95,14 @@ label {
   width: 45px;
 }
 
+.my-tasks div.task-selected {
+  height: 45px;
+  width: 45px;
+  box-shadow: 6px 5px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 6px 5px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 6px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
 .my-tasks span {
   color: #666;
   font-size: 18px;
