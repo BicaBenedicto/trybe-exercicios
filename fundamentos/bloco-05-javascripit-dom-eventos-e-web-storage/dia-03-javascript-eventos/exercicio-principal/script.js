@@ -149,4 +149,17 @@ function taskChangeColor(cor) {
   taskDiv.className = 'task';
   taskDiv.style.backgroundColor = cor;
   mytaskDiv.appendChild(taskDiv); 
+  mytaskDiv.addEventListener('click', taskSelect);
+}
+
+//Exercicio 9
+
+let divTask = document.querySelector('div.my-tasks');
+
+function taskSelect(evento) {
+  if(!evento.target.classList.contains('task-selected')) {
+    evento.target.classList.add('task-selected');
+  } else {
+    evento.target.classList.remove('task-selected');
+  }
 }
