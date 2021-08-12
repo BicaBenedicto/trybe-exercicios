@@ -89,3 +89,21 @@ function fridayButton(Sexta) {
 }
 
 fridayButton()
+
+//Exercicio 5
+
+let sextaArray = [];
+
+function changeText() {
+  let sexta = document.querySelectorAll('.friday');
+  for (let n in sexta) {
+    if (sexta[n].innerText > 0) {
+      sextaArray.push(sexta[n].innerText);
+      sexta[n].innerText = "It's Friday Day!";
+    } else {
+      sexta[n].innerText = sextaArray[n];
+    }
+  }
+}
+
+buttonFriday.addEventListener('click', changeText);
