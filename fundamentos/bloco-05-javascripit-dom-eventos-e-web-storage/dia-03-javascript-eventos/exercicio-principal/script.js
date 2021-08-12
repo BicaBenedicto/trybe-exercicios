@@ -122,3 +122,19 @@ function resetZoomEffet(evento) {
 
 days.addEventListener('mouseover', zoomEffect);
 days.addEventListener('mouseout', resetZoomEffet);
+
+//Exercicio 7
+
+let buttonAddTask = document.querySelector('#btn-add');
+
+function taskList(tarefa) {
+  let taskItem = document.createElement('span');
+  let taskInput = document.querySelector('#task-input');
+  let taskDiv = document.querySelector('div.my-tasks');
+  
+  taskItem.innerText =  taskInput.value;
+  taskItem.innerHTML += '<br>';
+  taskDiv.appendChild(taskItem);
+}
+
+buttonAddTask.addEventListener('click', taskList);
