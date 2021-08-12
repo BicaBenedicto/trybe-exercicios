@@ -172,17 +172,22 @@ days.addEventListener('mouseout', resetZoomEffet);
 
 //Exercicio 7
 
-let buttonAddComp = document.querySelector('#btn-add');
-
 function taskList(tarefa) {
   let taskItem = document.createElement('span');
   let taskInput = document.querySelector('#inputTask');
   let taskDiv = document.querySelector('div.my-tasks');
 
+  if (taskInput.value !== '') {
+
   taskItem.innerText =  taskInput.value;
   taskChangeColor(inputColor.value);
   taskItem.innerHTML += '<br>';
   taskDiv.appendChild(taskItem);
+
+  } else {
+
+  alert('Erro, caixa de texto vazia para adicionar');
+  }
 }
 
 
@@ -229,5 +234,19 @@ days.addEventListener('click', changeColorDay);
 
 //Exercicio Bonus
 
+let buttonAddComp = document.querySelector('#btn-add');
+let inputComp = document.querySelector('#task-input');
+let listComp = document.querySelector('.input-container');
 
-
+function compList() {
+  if (inputComp.value !== '') {
+    let itemComp = document.createElement('li');
+    
+    itemComp.style.marginTop = '10px';
+    itemComp.innerText = inputComp.value;
+    listComp.appendChild(itemComp);
+  } else {
+    alert('Erro, caixa de texto vazia para adicionar');
+  }  
+}
+buttonAddComp.addEventListener('click', compList);
