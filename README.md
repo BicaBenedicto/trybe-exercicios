@@ -29,7 +29,7 @@ Os códigos utilizados nos projetos, estarão disponiveis na linha do Projeto, c
 - [X] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [X] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [X] 3-4: _HTML Semântico_
-- [X] 3-5: _[Projeto - Lessons Learned](https://bicabenedicto.github.io/projetos/lessons-learned/)_     [(Código)](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/lessons-learned)
+- [X] 3-5: _[Projeto - Lessons Learned](https://bicabenedicto.github.io/projetos/lessons-learned/)_ [(Código)](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/lessons-learned)
 
 ##### Bloco 4: Introdução - JavaScript
 
@@ -41,12 +41,12 @@ Os códigos utilizados nos projetos, estarão disponiveis na linha do Projeto, c
 
 ##### Bloco 5: Introdução - JavaScript - Projetos
 
-- [ ] 5-1: _JavaScript - DOM e seletores_
-- [ ] 5-2: _JavaScript - Trabalhando com elementos_
-- [ ] 5-3: _JavaScript - Eventos_
-- [ ] 5-4: _JavaScript - Web Storage_
+- [X] 5-1: _JavaScript - DOM e seletores_
+- [X] 5-2: _JavaScript - Trabalhando com elementos_
+- [X] 5-3: _JavaScript - Eventos_
+- [X] 5-4: _JavaScript - Web Storage_
 - [ ] 5-5: _[Projeto - Meme Generator]()_:hourglass_flowing_sand: 
-- [ ] 5-6: _[Projeto - Arte com Pixels]()_:hourglass_flowing_sand: 
+- [X] 5-6: _[Projeto - Arte com Pixels](https://bicabenedicto.github.io/projetos/pixels-art/)_ [(Código)](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/pixels-art)
 - [ ] 5-7: _[Projeto - Lista de tarefas]()_:hourglass_flowing_sand: 
 - [ ] 5-7: _[Projeto - Adivinhe a Cor]()_:hourglass_flowing_sand: 
 - [ ] 5-7: _[Projeto - Carta Misteriosa]()_:hourglass_flowing_sand: 
