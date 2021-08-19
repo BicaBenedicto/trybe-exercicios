@@ -1,4 +1,4 @@
-states = {
+const states = {
   'AC': 'Acre' ,
   'AL': 'Alagoas' ,
   'AP': 'Amapá' ,
@@ -109,5 +109,88 @@ function checkDate() {
 }
 
 const outDate = document.getElementById('date');
-
 outDate.addEventListener('change', checkDate);
+
+function checkFormValue() {
+  const formReply = {
+    'Nome: '            : document.getElementById('name').value,
+    'E-mail: '          : document.getElementById('email').value,
+    'CPF: '             : document.getElementById('cpf').value,
+    'Endereco: '        : document.getElementById('endereco').value,
+    'Cidade: '          : document.getElementById('city').value,
+    'Estado: '          : document.getElementById('estado').value,
+    'Resumo currículo: ': document.getElementById('resume-curriculum').value,
+    'Cargo: '           : document.getElementById('cargo').value,
+    'Descrição cargo: ' : document.getElementById('desc-cargo').value,
+    'Data de inicio: '  : document.getElementById('date').value,
+  };
+  let output = 0;
+  
+  for (let index in formReply) {
+    if (formReply[index]) {
+      output += 0;
+    } else {
+      output += 1;
+    }
+  }
+  return output === 0;
+}
+function sendSections(block) {
+  const tipo = document.getElementsByClassName('tipo');
+  let type = '';
+  for (let index = 0; index < tipo.length; index += 1) {
+    if (tipo[index].checked) {
+      type = tipo[index].value;
+    }
+  }
+  const formReply = {
+    'Nome: '            : document.getElementById('name').value,
+    'E-mail: '          : document.getElementById('email').value,
+    'CPF: '             : document.getElementById('cpf').value,
+    'Endereco: '        : document.getElementById('endereco').value,
+    'Cidade: '          : document.getElementById('city').value,
+    'Estado: '          : document.getElementById('estado').value,
+    'Tipo: '            : type,
+    'Resumo currículo: ': document.getElementById('resume-curriculum').value,
+    'Cargo: '           : document.getElementById('cargo').value,
+    'Descrição cargo: ' : document.getElementById('desc-cargo').value,
+    'Data de inicio: '  : document.getElementById('date').value,
+  };
+
+  for (let item in formReply) {
+    const p = document.createElement('p');
+
+    p.innerText = item + formReply[item];
+    block.appendChild(p);
+  }
+}
+
+function createDivElement() {
+  const formComplete = document.getElementById('form-complete');
+  if (checkFormValue()) {
+    const divImprimir = document.createElement('div');
+    divImprimir.id = 'reply';
+    formComplete.appendChild(divImprimir);
+    sendSections(divImprimir);
+  } else {
+    const divImprimir = document.createElement('div');
+    divImprimir.id = 'reply';
+    divImprimir.innerText = 'Preencha todos os campos antes de enviar!';
+    formComplete.appendChild(divImprimir);
+  }
+}
+
+function sendCurriculum(event) {
+  const divReply = document.getElementById('reply');
+  event.preventDefault();
+
+  if (!divReply) {
+    createDivElement();
+  } else {
+    divReply.remove();
+    createDivElement();
+  }
+}
+
+const buttonSend = document.getElementById('button-submit');
+buttonSend.addEventListener('click', sendCurriculum);

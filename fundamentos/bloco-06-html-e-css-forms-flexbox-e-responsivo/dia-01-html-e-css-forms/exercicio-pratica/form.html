@@ -9,7 +9,7 @@
     <h1 id='title'>Formulário Currículo</h1>
   </header>
   <main>
-    <section>
+    <form action='' method="GET">
       <fieldset>
         <label for='name'>Nome: 
           <input type='text' maxlength='40' required id='name'>
@@ -31,16 +31,14 @@
           </select>
         </label>
         <p>Tipo:
-          <input type='radio' id='casa' name='tipo' value='casa' checked> Casa
-          <input type='radio' id='casa' name='tipo' value='apartamento'> Apartamento
+          <input type='radio' class='tipo' id='casa' name='tipo' value='Casa' checked> Casa
+          <input type='radio' class='tipo' id='apartamento' name='tipo' value='Apartamento'> Apartamento
         </p>
-      </fieldset>
-    </section>
-    <section>
+      </fieldset>    
       <fieldset>
         <label for='resume-curriculum'>Resumo Currículo:
           <br>
-          <textarea id='resume-curriculum' maxlength='1000' rows='10' cols='50'></textarea>
+          <textarea id='resume-curriculum' maxlength='1000' rows='10' cols='50' required></textarea>
         </label>
         <label for='cargo'>Cargo: 
           <input type='text' maxlength='40' id='cargo' required>
@@ -52,6 +50,10 @@
           <input type='text' id='date' placeholder='dd/mm/aaaa'required>
         </label>
       </fieldset>
+      <button id='button-submit' type='submit'>Enviar</button>
+    </form>
+    <section id='form-complete'>
+
     </section>
   </main>
 
