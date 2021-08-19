@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário Currículo</title>
+</head>
+<body>
+  <header>
+    <h1 id='title'>Formulário Currículo</h1>
+  </header>
+  <main>
+    <section>
+      <fieldset>
+        <label for='name'>Nome: 
+          <input type='text' maxlength='40' required id='name'>
+        </label>
+        <label for='email'>E-mail: 
+          <input type='text' maxlength='50' required id='email'>
+        </label>
+        <label for='cpf'>CPF: 
+          <input type='text' maxlength='11' required id='cpf'>
+        </label>
+        <label for='endereco'>Endereço: 
+          <input type='text' maxlength='200' required id='endereco'>
+        </label>
+        <label for='city'>Endereço: 
+          <input type='text' maxlength='28' required id='city'>
+        </label>
+        <label for='estado'>Estado: 
+          <select required id='estado'>
+            <option>Escolher Estado</option>
+          </select>
+        </label>
+        <p>Tipo:
+          <input type='radio' id='casa' name='tipo' value='casa' checked> Casa
+          <input type='radio' id='casa' name='tipo' value='apartamento'> Apartamento
+        </p>
+      </fieldset>
+    </section>
+  </main>
+
+  <script src='script.js'></script>
+</body>
+</html>
