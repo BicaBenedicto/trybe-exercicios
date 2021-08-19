@@ -23,18 +23,34 @@
         <label for='endereco'>Endereço: 
           <input type='text' maxlength='200' required id='endereco'>
         </label>
-        <label for='city'>Endereço: 
+        <label for='city'>Cidade: 
           <input type='text' maxlength='28' required id='city'>
         </label>
         <label for='estado'>Estado: 
           <select required id='estado'>
-            <option>Escolher Estado</option>
           </select>
         </label>
         <p>Tipo:
           <input type='radio' id='casa' name='tipo' value='casa' checked> Casa
           <input type='radio' id='casa' name='tipo' value='apartamento'> Apartamento
         </p>
+      </fieldset>
+    </section>
+    <section>
+      <fieldset>
+        <label for='resume-curriculum'>Resumo Currículo:
+          <br>
+          <textarea id='resume-curriculum' maxlength='1000' rows='10' cols='50'></textarea>
+        </label>
+        <label for='cargo'>Cargo: 
+          <input type='text' maxlength='40' id='cargo' required>
+        </label>
+        <label for='desc-cargo'>Descrição do cargo: 
+          <input type='text' maxlength='500' id='desc-cargo' required>
+        </label>
+        <label for='date'>Data de início: 
+          <input type='text' id='date' placeholder='dd/mm/aaaa'required>
+        </label>
       </fieldset>
     </section>
   </main>
