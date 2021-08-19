@@ -3,62 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <title>Formulário Currículo</title>
+  <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
 </head>
 <body>
-  <header>
-    <h1 id='title'>Formulário Currículo</h1>
+  <header class='container'>
+    <br><h1 class="title is-2" id='title'>Formulário Currículo</h1><br>
   </header>
-  <main>
-    <form action='' method="GET">
-      <fieldset>
-        <label for='name'>Nome: 
-          <input type='text' maxlength='40' required id='name'>
-        </label>
-        <label for='email'>E-mail: 
-          <input type='text' maxlength='50' required id='email'>
-        </label>
-        <label for='cpf'>CPF: 
-          <input type='text' maxlength='11' required id='cpf'>
-        </label>
-        <label for='endereco'>Endereço: 
-          <input type='text' maxlength='200' required id='endereco'>
-        </label>
-        <label for='city'>Cidade: 
-          <input type='text' maxlength='28' required id='city'>
-        </label>
-        <label for='estado'>Estado: 
+  <main class='container'>
+    <form class='box' action='' method="GET">
+    <div class='field'>  
+      <label class="label" for='name'>Nome: 
+        <input class="input is-small" type='text' maxlength='40' required id='name'>
+      </label>
+    </div>
+    <div class='field'>
+      <label class="label" for='email'>E-mail: 
+        <input class="input is-small"type='mail' maxlength='50' required id='email'>
+      </label>
+    </div>
+    <div class='field'>
+      <label class="label" for='cpf'>CPF: 
+        <input class="input is-small" type='text' maxlength='11' required id='cpf'>
+      </label>
+    </div>
+    <div class='field'>
+      <label class="label" for='endereco'>Endereço: 
+        <input class="input is-small"type='text' maxlength='200' required id='endereco'>
+      </label>
+    </div>
+    <div class='field'>
+      <label class="label" for='city'>Cidade: 
+        <input class="input is-small" type='text' maxlength='28' required id='city'>
+      </label>
+    </div>
+    <div class='field'>
+      <div class='select is-small'>
+        <label class="label" for='estado'>Estado: 
           <select required id='estado'>
           </select>
         </label>
-        <p>Tipo:
-          <input type='radio' class='tipo' id='casa' name='tipo' value='Casa' checked> Casa
-          <input type='radio' class='tipo' id='apartamento' name='tipo' value='Apartamento'> Apartamento
-        </p>
-      </fieldset>    
-      <fieldset>
-        <label for='resume-curriculum'>Resumo Currículo:
-          <br>
-          <textarea id='resume-curriculum' maxlength='1000' rows='10' cols='50' required></textarea>
+      </div>
+    </div>
+    <div class ='field'>
+      <br>
+      <p><b>Tipo: </b>
+        <label class="radio" for='casa'>
+          <input class="radio tipo" type='radio' id='casa' name='tipo' value='Casa' checked> Casa
         </label>
-        <label for='cargo'>Cargo: 
-          <input type='text' maxlength='40' id='cargo' required>
+        <label class="radio" for='apartamento'>
+          <input class="radio tipo" type='radio' id='apartamento' name='tipo' value='Apartamento'> Apartamento
         </label>
-        <label for='desc-cargo'>Descrição do cargo: 
-          <input type='text' maxlength='500' id='desc-cargo' required>
-        </label>
-        <label for='date'>Data de início: 
-          <input type='text' id='date' placeholder='dd/mm/aaaa'required>
-        </label>
-      </fieldset>
-      <button id='button-submit' type='submit'>Enviar</button>
+      </p>
+    </div>
+    <div class='field'>
+      <label class="label" for='resume-curriculum'>Resumo Currículo:
+        <br>
+        <textarea class="textarea is-small" id='resume-curriculum' maxlength='1000' rows='10' cols='50' required></textarea>
+      </label>
+    </div>
+    <div class='field'>
+      <label class="label" for='cargo'>Cargo: 
+        <input class="input is-small" type='text' maxlength='40' id='cargo' required>
+      </label>
+    </div>
+    <div class='field'>
+      <label class="label" for='desc-cargo'>Descrição do cargo: 
+        <input class="input is-small" type='text' maxlength='500' id='desc-cargo' required>
+      </label>
+    </div>
+    <div class='field'>
+      <label class="label" for='date'>Data de início: 
+        <input class="input is-small" type='text' id='date' placeholder='dd/mm/aaaa'required>
+      </label>
+    </div>
+      <button class="button is-link" id='button-submit' type='submit'>Enviar</button>
+      <button class="button is-link is-light" id='clear-form' type='reset'>Limpar</button>
     </form>
-    <button id='clear-form' type='submit'>Limpar</button>
     
-    <section id='form-complete'>
+    <section class='box' id='form-complete'>
 
     </section>
   </main>
-
-  <script src='script.js'></script>
+  <script src="script.js"></script>
 </body>
 </html>
