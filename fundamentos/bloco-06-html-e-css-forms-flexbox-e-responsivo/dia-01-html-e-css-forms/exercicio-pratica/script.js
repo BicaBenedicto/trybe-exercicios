@@ -194,3 +194,10 @@ function sendCurriculum(event) {
 
 const buttonSend = document.getElementById('button-submit');
 buttonSend.addEventListener('click', sendCurriculum);
+
+function clearInputs() {
+  document.location.reload();
+}
+
+const buttonClear = document.getElementById('clear-form');
+buttonClear.addEventListener('click', clearInputs);
