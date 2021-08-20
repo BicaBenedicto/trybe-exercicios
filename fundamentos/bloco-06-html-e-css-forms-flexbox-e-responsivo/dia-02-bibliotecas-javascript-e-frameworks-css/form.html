@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Formulário Currículo</title>
+  <link rel="stylesheet" type="text/css" href="node_modules/pikaday/css/pikaday.css">
   <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
 </head>
 <body>
@@ -73,7 +74,7 @@
     </div>
     <div class='field'>
       <label class="label" for='date'>Data de início: 
-        <input class="input is-small" type='text' id='date' placeholder='dd/mm/aaaa'required>
+        <input class="input is-small" type='text' id='datepicker' placeholder='dd/mm/aaaa'required>
       </label>
     </div>
       <button class="button is-link" id='button-submit' type='submit'>Enviar</button>
@@ -84,6 +85,28 @@
 
     </section>
   </main>
+  <script src="node_modules/pikaday/pikaday.js"></script>
+  <script>
+    var picker = new Pikaday({
+    field: document.getElementById('datepicker'),
+    format: 'D/M/YYYY',
+    toString(date, format) {
+        const day = date.getDate();
+        const month = date.getMonth() + 1;
+        const year = date.getFullYear();
+        return `${day}/${month}/${year}`;
+    },
+    parse(dateString, format) {
+        const parts = dateString.split('/');
+        const day = parseInt(parts[0], 10);
+        const month = parseInt(parts[1], 10) - 1;
+        const year = parseInt(parts[2], 10);
+        return new Date(year, month, day);
+    }
+});
+
+  </script>
   <script src="script.js"></script>
+
 </body>
 </html>
