@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "just-validate": "^1.5.0"
+  },
+  "name": "dia-03-css-flexbox-parte-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

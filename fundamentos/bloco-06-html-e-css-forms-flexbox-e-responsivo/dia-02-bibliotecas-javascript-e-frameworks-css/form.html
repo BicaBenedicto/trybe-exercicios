@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário Currículo</title>
+  <link rel="stylesheet" type="text/css" href="node_modules/pikaday/css/pikaday.css">
+  <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+</head>
+<body>
+  <header class='container'>
+    <br><h1 class="title is-2" id='title'>Formulário Currículo</h1><br>
+  </header>
+  <main class='container'>
+    <form class='box js-form' id='formulario' action='' method="GET">
+    <div class='field'>  
+      <label class="label" for='name'>Nome: 
+        <input class="input is-small" type='text' maxlength='40' id='name' required data-validate-field='name'>
+      </label>
+    </div>
+    <div class='field'>
+      <label class="label" for='email'>E-mail: 
+        <input class="input is-small"type='mail' maxlength='50' id='email' required data-validate-field='email'>
+      </label>
+    </div>
+    <div class='field'>
+      <label class="label" for='cpf'>CPF: 
+        <input class="input is-small" type='text' maxlength='11' id='cpf' required data-validate-field='cpf'>
+      </label>
+    </div>
+    <div class='field'>
+      <label class="label" for='endereco'>Endereço: 
+        <input class="input is-small"type='text' maxlength='200' id='endereco' required data-validate-field='andress'>
+      </label>
+    </div>
+    <div class='field'>
+      <label class="label" for='city'>Cidade: 
+        <input class="input is-small" type='text' maxlength='28' id='city' required data-validate-field='text'>
+      </label>
+    </div>
+    <div class='field'>
+      <div class='select is-small'>
+        <label class="label" for='estado'>Estado: 
+          <select id='estado' data-validate-field='state'>
+          </select>
+        </label>
+      </div>
+    </div>
+    <div class ='field'>
+      <br>
+      <p><b>Tipo: </b>
+        <label class="radio" for='casa'>
+          <input class="radio tipo" type='radio' id='casa' name='tipo' value='Casa' data-validate-field='radio' > Casa
+        </label>
+        <label class="radio" for='apartamento'>
+          <input class="radio tipo" type='radio' id='apartamento' name='tipo' value='Apartamento' data-validate-field='radio'> Apartamento
+        </label>
+      </p>
+    </div>
+    <div class='field'>
+      <label class="label" for='resume-curriculum'>Resumo Currículo:
+        <br>
+        <textarea class="textarea is-small" id='resume-curriculum' maxlength='1000' rows='10' cols='50' required data-validate-field='text'></textarea>
+      </label>
+    </div>
+    <div class='field'>
+      <label class="label" for='cargo'>Cargo: 
+        <input class="input is-small" type='text' maxlength='40' id='cargo' required data-validate-field='position'>
+      </label>
+    </div>
+    <div class='field'>
+      <label class="label" for='desc-cargo'>Descrição do cargo: 
+        <input class="input is-small" type='text' maxlength='500' id='desc-cargo' required  data-validate-field='description'>
+      </label>
+    </div>
+    <div class='field'>
+      <label class="label" for='date'>Data de início: 
+        <input class="input is-small" type='text' id='datepicker' placeholder='dd/mm/aaaa' autocomplete="off" required data-validate-field='date'>
+      </label>
+    </div>
+      <button class="button is-link" id='button-submit' type='submit'>Enviar</button>
+      <button class="button is-link is-light" id='clear-form' type='reset'>Limpar</button>
+    </form>
+    
+    <section class='box' id='form-complete'>
+
+    </section>
+  </main>
+  <script src="node_modules/pikaday/pikaday.js"></script>
+  <script>
+    var picker = new Pikaday({
+    field: document.getElementById('datepicker'),
+    format: 'D/M/YYYY',
+    toString(date, format) {
+        const day = date.getDate();
+        const month = date.getMonth() + 1;
+        const year = date.getFullYear();
+        return `${day}/${month}/${year}`;
+    },
+    parse(dateString, format) {
+        const parts = dateString.split('/');
+        const day = parseInt(parts[0], 10);
+        const month = parseInt(parts[1], 10) - 1;
+        const year = parseInt(parts[2], 10);
+        return new Date(year, month, day);
+    }
+});
+  </script>
+  <script src="script.js" type="module"></script>
+</body>
+</html>
