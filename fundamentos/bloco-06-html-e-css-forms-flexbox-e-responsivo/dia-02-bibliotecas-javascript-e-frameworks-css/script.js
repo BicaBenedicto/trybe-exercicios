@@ -1,3 +1,5 @@
+import './node_modules/just-validate/dist/js/just-validate.min.js'
+
 const states = {
   'AC': 'Acre' ,
   'AL': 'Alagoas' ,
@@ -42,31 +44,6 @@ function selectStates() {
 
 selectStates();
 
-
-function checkFormValue() {
-  const formReply = {
-    'Nome: '            : document.getElementById('name').value,
-    'E-mail: '          : document.getElementById('email').value,
-    'CPF: '             : document.getElementById('cpf').value,
-    'Endereco: '        : document.getElementById('endereco').value,
-    'Cidade: '          : document.getElementById('city').value,
-    'Estado: '          : document.getElementById('estado').value,
-    'Resumo currículo: ': document.getElementById('resume-curriculum').value,
-    'Cargo: '           : document.getElementById('cargo').value,
-    'Descrição cargo: ' : document.getElementById('desc-cargo').value,
-    'Data de inicio: '  : document.getElementById('datepicker').value,
-  };
-  let output = 0;
-  
-  for (let index in formReply) {
-    if (formReply[index]) {
-      output += 0;
-    } else {
-      output += 1;
-    }
-  }
-  return output === 0;
-}
 function sendSections(block) {
   const tipo = document.getElementsByClassName('tipo');
   let type = '';
@@ -99,23 +76,18 @@ function sendSections(block) {
 
 function createDivElement() {
   const formComplete = document.getElementById('form-complete');
-  if (checkFormValue()) {
+
     const divImprimir = document.createElement('div');
     divImprimir.id = 'reply';
     formComplete.appendChild(divImprimir);
     sendSections(divImprimir);
-  } else {
-    const divImprimir = document.createElement('div');
-    divImprimir.id = 'reply';
-    divImprimir.innerText = 'Preencha todos os campos antes de enviar!';
-    formComplete.appendChild(divImprimir);
-  }
 }
 
 function sendCurriculum(event) {
   const divReply = document.getElementById('reply');
   event.preventDefault();
-
+  
+  if(JustValidate) {
   if (!divReply) {
     createDivElement();
   } else {
@@ -123,13 +95,112 @@ function sendCurriculum(event) {
     createDivElement();
   }
 }
+}
 
 const buttonSend = document.getElementById('button-submit');
-buttonSend.addEventListener('click', sendCurriculum);
+
 
 function clearInputs() {
   document.location.reload();
+  
 }
 
 const buttonClear = document.getElementById('clear-form');
 buttonClear.addEventListener('click', clearInputs);
+
+window.onload = function () {
+  selectStates();
+  new window.JustValidate('.js-form', {
+    rules: {
+      name: {
+        required: true,
+        minLength: 3,
+        maxLength: 40
+      },
+      email: {
+        required: true,
+        email: true,
+        maxLength: 50
+      },
+      cpf: {
+        required: true,
+        maxLength: 11
+      },
+      address: {
+        required: true,
+        maxLength: 200
+      },
+      city: {
+        required: true,
+        maxLength: 28
+      },
+      state: {
+        required: true,
+      },
+      radio: {
+        required: true,
+      },
+      text: {
+        required: true,
+        maxLength: 1000
+      },
+      position: {
+        required: true,
+        maxLength: 40
+      },
+      description: {
+        required: true,
+        maxLength: 500
+      },
+      date: {
+        required: true,
+      }
+    },
+    messages: {
+      name: {
+        required: 'O campo de nome é obrigatório.',
+        maxLength: 'O limite é de 40 caracteres.'
+      },
+      email: {
+        required: 'O campo de email é obrigatório.',
+        email: 'O email digitado não é válido.',
+        maxLength: 'O limite é de 50 caracteres.'
+      },
+      cpf: {
+        required: 'O campo de CPF é obrigatório.',
+        maxLength: 'O limite é de 11 caracteres.'
+      },
+      address: {
+        required: 'O campo endereço é obrigatório.',
+        maxLength: 'O limite é de 200 caracteres.'
+      },
+      city: {
+        required: 'O campo cidade é obrigatório.',
+        maxLength: 'O limite é de 28 caracteres.'
+      },
+      state: {
+        required: 'O campo estado é obrigatório.',
+      },
+      radio: {
+        required: 'A escolha de um item é obrigatória.',
+      },
+      text: {
+        required: 'Este campo é obrigatório.',
+        maxLength: 'O limite é de 1000 caracteres.'
+      },
+      position: {
+        required: 'Este campo é obrigatório.',
+        maxLength: 'O limite é de 40 caracteres.'
+      },
+      description: {
+        required: 'Este campo é obrigatório.',
+        maxLength: 'O limite é de 500 caracteres.'
+      },
+      date: {
+        required: 'Este campo é obrigatório.',
+      }
+    },
+    submitHandler: function () {
+      buttonSend.addEventListener('click', sendCurriculum);
+    }});
+}

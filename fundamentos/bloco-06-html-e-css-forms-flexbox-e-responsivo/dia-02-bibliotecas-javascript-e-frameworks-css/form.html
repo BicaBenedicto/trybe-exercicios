@@ -11,36 +11,36 @@
     <br><h1 class="title is-2" id='title'>Formulário Currículo</h1><br>
   </header>
   <main class='container'>
-    <form class='box' action='' method="GET">
+    <form class='box js-form' id='formulario' action='' method="GET">
     <div class='field'>  
       <label class="label" for='name'>Nome: 
-        <input class="input is-small" type='text' maxlength='40' required id='name'>
+        <input class="input is-small" type='text' maxlength='40' id='name' required data-validate-field='name'>
       </label>
     </div>
     <div class='field'>
       <label class="label" for='email'>E-mail: 
-        <input class="input is-small"type='mail' maxlength='50' required id='email'>
+        <input class="input is-small"type='mail' maxlength='50' id='email' required data-validate-field='email'>
       </label>
     </div>
     <div class='field'>
       <label class="label" for='cpf'>CPF: 
-        <input class="input is-small" type='text' maxlength='11' required id='cpf'>
+        <input class="input is-small" type='text' maxlength='11' id='cpf' required data-validate-field='cpf'>
       </label>
     </div>
     <div class='field'>
       <label class="label" for='endereco'>Endereço: 
-        <input class="input is-small"type='text' maxlength='200' required id='endereco'>
+        <input class="input is-small"type='text' maxlength='200' id='endereco' required data-validate-field='andress'>
       </label>
     </div>
     <div class='field'>
       <label class="label" for='city'>Cidade: 
-        <input class="input is-small" type='text' maxlength='28' required id='city'>
+        <input class="input is-small" type='text' maxlength='28' id='city' required data-validate-field='text'>
       </label>
     </div>
     <div class='field'>
       <div class='select is-small'>
         <label class="label" for='estado'>Estado: 
-          <select required id='estado'>
+          <select id='estado' data-validate-field='state'>
           </select>
         </label>
       </div>
@@ -49,32 +49,32 @@
       <br>
       <p><b>Tipo: </b>
         <label class="radio" for='casa'>
-          <input class="radio tipo" type='radio' id='casa' name='tipo' value='Casa' checked> Casa
+          <input class="radio tipo" type='radio' id='casa' name='tipo' value='Casa' data-validate-field='radio' > Casa
         </label>
         <label class="radio" for='apartamento'>
-          <input class="radio tipo" type='radio' id='apartamento' name='tipo' value='Apartamento'> Apartamento
+          <input class="radio tipo" type='radio' id='apartamento' name='tipo' value='Apartamento' data-validate-field='radio'> Apartamento
         </label>
       </p>
     </div>
     <div class='field'>
       <label class="label" for='resume-curriculum'>Resumo Currículo:
         <br>
-        <textarea class="textarea is-small" id='resume-curriculum' maxlength='1000' rows='10' cols='50' required></textarea>
+        <textarea class="textarea is-small" id='resume-curriculum' maxlength='1000' rows='10' cols='50' required data-validate-field='text'></textarea>
       </label>
     </div>
     <div class='field'>
       <label class="label" for='cargo'>Cargo: 
-        <input class="input is-small" type='text' maxlength='40' id='cargo' required>
+        <input class="input is-small" type='text' maxlength='40' id='cargo' required data-validate-field='position'>
       </label>
     </div>
     <div class='field'>
       <label class="label" for='desc-cargo'>Descrição do cargo: 
-        <input class="input is-small" type='text' maxlength='500' id='desc-cargo' required>
+        <input class="input is-small" type='text' maxlength='500' id='desc-cargo' required  data-validate-field='description'>
       </label>
     </div>
     <div class='field'>
       <label class="label" for='date'>Data de início: 
-        <input class="input is-small" type='text' id='datepicker' placeholder='dd/mm/aaaa'required>
+        <input class="input is-small" type='text' id='datepicker' placeholder='dd/mm/aaaa' autocomplete="off" required data-validate-field='date'>
       </label>
     </div>
       <button class="button is-link" id='button-submit' type='submit'>Enviar</button>
@@ -104,9 +104,7 @@
         return new Date(year, month, day);
     }
 });
-
   </script>
-  <script src="script.js"></script>
-
+  <script src="script.js" type="module"></script>
 </body>
 </html>
