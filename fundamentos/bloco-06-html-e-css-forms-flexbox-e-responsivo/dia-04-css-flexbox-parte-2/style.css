@@ -23,6 +23,7 @@ body {
 }
 
 .menu-container {
+  align-self: center;
   display: flex;
   flex-grow: 1;
 }
