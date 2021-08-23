@@ -50,6 +50,7 @@ body {
 .movie-container {
   display: flex;
   flex-direction: column;
+  flex: 10 700px;
 }
 
 .movie-container h2 {
@@ -60,7 +61,6 @@ body {
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 700px;
   justify-content: space-around;
 }
 
