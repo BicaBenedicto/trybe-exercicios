@@ -45,18 +45,18 @@ Os códigos utilizados nos projetos, estarão disponiveis na linha do Projeto, c
 - [X] 5-2: _JavaScript - Trabalhando com elementos_
 - [X] 5-3: _JavaScript - Eventos_
 - [X] 5-4: _JavaScript - Web Storage_
-- [ ] 5-5: _[Projeto - Meme Generator]()_:hourglass_flowing_sand: 
+- [X] 5-5: _[Projeto - Meme Generator](https://bicabenedicto.github.io/projetos/meme-generator/)_[(Código)](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/meme-generator)
 - [X] 5-6: _[Projeto - Arte com Pixels](https://bicabenedicto.github.io/projetos/pixels-art/)_ [(Código)](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/pixels-art)
-- [ ] 5-7: _[Projeto - Lista de tarefas]()_:hourglass_flowing_sand: 
-- [ ] 5-7: _[Projeto - Adivinhe a Cor]()_:hourglass_flowing_sand: 
-- [ ] 5-7: _[Projeto - Carta Misteriosa]()_:hourglass_flowing_sand: 
+- [X] 5-7: _[Projeto - Lista de tarefas](https://bicabenedicto.github.io/projetos/to-do-list/)_[(Código)](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/to-do-list)
+- [X] 5-7: _[Projeto - Adivinhe a Cor](https://bicabenedicto.github.io/projetos/color-guess/)_[(Código)](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/color-guess)
+- [X] 5-7: _[Projeto - Carta Misteriosa](https://bicabenedicto.github.io/projetos/mistery-letter/)_[(Código)](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/mistery-letter)
 
 ##### Bloco 6: HTML & CSS avançado
 
-- [ ] 6-1: _HTML & CSS - Forms_
-- [ ] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
-- [ ] 6-3: _CSS Flexbox - Part 1_
-- [ ] 6-4: _CSS Flexbox - Part 2_
+- [X] 6-1: _HTML & CSS - Forms_
+- [X] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
+- [X] 6-3: _CSS Flexbox - Part 1_
+- [X] 6-4: _CSS Flexbox - Part 2_
 - [ ] 6-5: _CSS Responsivo - Mobile First_
 - [ ] 6-6: _[Projeto - Trybewarts]()_:hourglass_flowing_sand: 
 
