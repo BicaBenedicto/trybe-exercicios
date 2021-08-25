@@ -68,12 +68,18 @@ p strong {
 
 @media only screen and (min-width: 500px) {
   .card:nth-of-type(1) {
-    display: block;
+    display: inline-block;
   }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1000px) {
   .card:nth-of-type(2) {
-    display: block;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 950px) {
+  .card:nth-of-type(3) {
+    display: inline-block;
   }
 }
