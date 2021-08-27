@@ -1,0 +1,64 @@
+body {
+  font-size: 20px;
+  margin: 20px;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+figure {
+  text-align: center;
+  margin: 50px auto;
+}
+
+@media only screen and (min-width: 700px) {
+  body {
+    background-color: rgb(66, 66, 66);
+    color: white;
+    font-size: 18px;
+    margin: 50px;
+  }
+
+  main {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    max-width: 1300px;
+  }
+
+  h2 {
+    display: block;
+    padding: 0 30%;
+  }
+
+  figure {
+    display: inline-block;
+    padding: 20px;
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+    background-color: rgb(152, 255, 255);
+    color: black;
+    font-size: 40px;
+    margin: 60px;
+    max-width: 1400px
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  main {
+    margin: 0 auto;
+  }
+}
