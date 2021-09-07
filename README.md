@@ -63,14 +63,14 @@ Os códigos utilizados nos projetos, estarão disponiveis na linha do Projeto, c
 ##### Bloco 7: JavaScript ES6 & Testes Unitários
 
 - [X] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
-- [ ] 7-2: _JavaScript ES6 - Objects_
-- [ ] 7-3: _Testes unitários em JavaScript_
-- [ ] 7-4: _[Projeto - JavaScript Testes Unitários]()_:hourglass_flowing_sand: 
+- [X] 7-2: _JavaScript ES6 - Objects_
+- [X] 7-3: _Testes unitários em JavaScript_
+- [X] 7-4: _[Projeto - JavaScript Testes Unitários](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/js-unit-tests)_
 
 ##### Bloco 8: JavaScript ES6
 
-- [ ] 8-1: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
-- [ ] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
+- [X] 8-1: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
+- [X] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
 - [ ] 8-3: _JavaScript ES6 - Higher Order Functions - reduce_
 - [ ] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
 - [ ] 8-5: _[Projeto - Zoo functions]()_:hourglass_flowing_sand: 
