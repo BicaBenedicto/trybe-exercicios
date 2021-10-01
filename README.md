@@ -10,7 +10,7 @@ Por ser um estudante ainda, muitos blocos e projetos não foram realizados, send
 
 Os códigos utilizados nos projetos, estarão disponiveis na linha do Projeto, caso o mesmo tenha uma página visual, o código será disponibilizado ao lado com o nome "(Código)".
 
-## Fundamentos do Desenvolvimento Web :hourglass_flowing_sand: 
+## Fundamentos do Desenvolvimento Web :heavy_check_mark:
 
 ##### Bloco 1: Introdução - Unix & Shell
 
@@ -29,7 +29,7 @@ Os códigos utilizados nos projetos, estarão disponiveis na linha do Projeto, c
 - [X] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [X] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [X] 3-4: _HTML Semântico_
-- [X] 3-5: _[Projeto - Lessons Learned](https://bicabenedicto.github.io/projetos/lessons-learned/)_ [(Código)](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/lessons-learned)
+- [X] 3-5: _[Projeto - Lessons Learned](https://bicabenedicto.github.io/projetos/lessons-learned/)_ [(Código)](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/lessons-learned):heavy_check_mark:
 
 ##### Bloco 4: Introdução - JavaScript
 
@@ -37,7 +37,7 @@ Os códigos utilizados nos projetos, estarão disponiveis na linha do Projeto, c
 - [X] 4-2: _JavaScript - Array e loop For_
 - [X] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [X] 4-4: _JavaScript - Objetos e funções_
-- [X] 4-5: _[Projeto - Playground Functions](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/playground-functions)_
+- [X] 4-5: _[Projeto - Playground Functions](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/playground-functions)_:heavy_check_mark:
 
 ##### Bloco 5: Introdução - JavaScript - Projetos
 
@@ -45,11 +45,11 @@ Os códigos utilizados nos projetos, estarão disponiveis na linha do Projeto, c
 - [X] 5-2: _JavaScript - Trabalhando com elementos_
 - [X] 5-3: _JavaScript - Eventos_
 - [X] 5-4: _JavaScript - Web Storage_
-- [X] 5-5: _[Projeto - Meme Generator](https://bicabenedicto.github.io/projetos/meme-generator/)_[(Código)](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/meme-generator)
-- [X] 5-6: _[Projeto - Arte com Pixels](https://bicabenedicto.github.io/projetos/pixels-art/)_ [(Código)](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/pixels-art)
-- [X] 5-7: _[Projeto - Lista de tarefas](https://bicabenedicto.github.io/projetos/to-do-list/)_[(Código)](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/to-do-list)
-- [X] 5-7: _[Projeto - Adivinhe a Cor](https://bicabenedicto.github.io/projetos/color-guess/)_[(Código)](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/color-guess)
-- [X] 5-7: _[Projeto - Carta Misteriosa](https://bicabenedicto.github.io/projetos/mistery-letter/)_[(Código)](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/mistery-letter)
+- [X] 5-5: _[Projeto - Meme Generator](https://bicabenedicto.github.io/projetos/meme-generator/)_[(Código)](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/meme-generator):heavy_check_mark:
+- [X] 5-6: _[Projeto - Arte com Pixels](https://bicabenedicto.github.io/projetos/pixels-art/)_ [(Código)](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/pixels-art):heavy_check_mark:
+- [X] 5-7: _[Projeto - Lista de tarefas](https://bicabenedicto.github.io/projetos/to-do-list/)_[(Código)](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/to-do-list):heavy_check_mark:
+- [X] 5-7: _[Projeto - Adivinhe a Cor](https://bicabenedicto.github.io/projetos/color-guess/)_[(Código)](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/color-guess):heavy_check_mark:
+- [X] 5-7: _[Projeto - Carta Misteriosa](https://bicabenedicto.github.io/projetos/mistery-letter/)_[(Código)](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/mistery-letter):heavy_check_mark:
 
 ##### Bloco 6: HTML & CSS avançado
 
@@ -58,35 +58,39 @@ Os códigos utilizados nos projetos, estarão disponiveis na linha do Projeto, c
 - [X] 6-3: _CSS Flexbox - Part 1_
 - [X] 6-4: _CSS Flexbox - Part 2_
 - [X] 6-5: _CSS Responsivo - Mobile First_
-- [X] 6-6: _[Projeto - Trybewarts](https://bicabenedicto.github.io/projetos/trybewarts/)_[(Código)](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/trybewarts)
+- [X] 6-6: _[Projeto - Trybewarts](https://bicabenedicto.github.io/projetos/trybewarts/)_[(Código)](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/trybewarts):heavy_check_mark:
 
 ##### Bloco 7: JavaScript ES6 & Testes Unitários
 
 - [X] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [X] 7-2: _JavaScript ES6 - Objects_
 - [X] 7-3: _Testes unitários em JavaScript_
-- [X] 7-4: _[Projeto - JavaScript Testes Unitários](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/js-unit-tests)_
+- [X] 7-4: _[Projeto - JavaScript Testes Unitários](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/js-unit-tests)_:heavy_check_mark:
 
 ##### Bloco 8: JavaScript ES6
 
 - [X] 8-1: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
 - [X] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
-- [ ] 8-3: _JavaScript ES6 - Higher Order Functions - reduce_
-- [ ] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
-- [ ] 8-5: _[Projeto - Zoo functions]()_:hourglass_flowing_sand: 
+- [X] 8-3: _JavaScript ES6 - Higher Order Functions - reduce_
+- [X] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
+- [X] 8-5: _[Projeto - Zoo functions](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/zoo-functions)_ :heavy_check_mark:
 
 ##### Bloco 9: Assincronicidade & Callbacks
 
-- [ ] 9-1: _JavaScript Assíncrono e Callbacks_
-- [ ] 9-2: _JavaScript Promises_
-- [ ] 9-3: _[Projeto - Carrinho de Compras]()_:hourglass_flowing_sand: 
+- [X] 9-1: _JavaScript Assíncrono e Callbacks_
+- [X] 9-2: _JavaScript Promises_
+- [X] 9-3: _[Projeto - Carrinho de Compras](https://bicabenedicto.github.io/projetos/shopping-cart/)_[(Código)](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/shopping-cart) :heavy_check_mark:
 
 ##### Bloco 10: Jest
 
-- [ ] 10-1: _Primeiros passos no Jest_
-- [ ] 10-2: _Jest - Testes Assíncronos_
-- [ ] 10-3: _Jest - Simulando comportamentos_
-- [ ] 10-4: _[Projeto - Jest Assíncrono e Mocking]()_:hourglass_flowing_sand: 
+- [X] 10-1: _Primeiros passos no Jest_
+- [X] 10-2: _Jest - Testes Assíncronos_
+- [X] 10-3: _Jest - Simulando comportamentos_
+- [X] 10-4: _[Projeto - Jest Assíncrono e Mocking](https://github.com/BicaBenedicto/BicaBenedicto.github.io/tree/master/projetos/js-unit-tests)_ :heavy_check_mark:
+
+## Projeto Bonus
+
+- [X] _[Projeto - SpotTrybe](https://bicabenedicto.github.io/SpotTrybe/)_[(Código)](https://github.com/BicaBenedicto/SpotTrybe):heavy_check_mark:
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
