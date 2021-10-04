@@ -5,7 +5,7 @@ import Footer from './Footer';
 
 const Task = (value) => {
   return (
-    <li>{value}</li>
+    <li className='card'>{value}</li>
   );
 }
 

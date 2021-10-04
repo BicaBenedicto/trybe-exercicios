@@ -24,7 +24,12 @@ const conteudos = [
 ];
 
 const contents = (object) => {
-  return [<p>O conteúdo é: {object.conteudo}</p> ,<p>Status: {object.bloco}</p>, <p>Bloco: {object.status}</p>,<br />]
+  return (<ul className='card'>
+    <li>O conteúdo é: {object.conteudo}</li>
+    <li>Status: {object.bloco}</li>
+    <li>Bloco: {object.status}</li>
+    <br />
+    </ul>);
 }
 
 class Content extends React.Component {
