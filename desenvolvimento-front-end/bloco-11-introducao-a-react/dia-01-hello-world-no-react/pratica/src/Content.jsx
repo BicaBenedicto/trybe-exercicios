@@ -24,7 +24,7 @@ const conteudos = [
 ];
 
 const contents = (object) => {
-  return (<ul className='card'>
+  return (<ul key={object.conteudo} className='card'>
     <li>O conteúdo é: {object.conteudo}</li>
     <li>Status: {object.bloco}</li>
     <li>Bloco: {object.status}</li>
