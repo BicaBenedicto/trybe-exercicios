@@ -1,0 +1,22 @@
+body {
+  color: white;
+  background-color: gray;
+}
+
+.card {
+  display: block;
+  box-shadow: 3px 3px 5px black;
+  margin: 10px auto;
+  padding: 5px;
+  font-weight: 600;
+  text-align: center;
+  width: 500px;
+}
+
+.card:hover {
+  color: black;
+}
+
+.card li {
+  list-style: none;
+}
