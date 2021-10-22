@@ -97,20 +97,20 @@ Os códigos utilizados nos projetos, estarão disponiveis na linha do Projeto, c
 ##### Bloco 11: Introdução - React
 
 - [X] 11-1: _'Hello, world!' no React!_
-- [ ] 11-2: _Componentes React_
-- [ ] 11-3: _[Projeto - Movie Cards Library]()_:hourglass_flowing_sand: 
+- [X] 11-2: _Componentes React_
+- [X] 11-3: _[Projeto - Movie Cards Library]()_:hourglass_flowing_sand: 
 
 ##### Bloco 12: React
 
-- [ ] 12-1: _Componentes com estado e eventos_
-- [ ] 12-2: _Formulários no React_
-- [ ] 12-3: _[Projeto - Movie Cards Library Stateful]()_:hourglass_flowing_sand: 
+- [X] 12-1: _Componentes com estado e eventos_
+- [X] 12-2: _Formulários no React_
+- [X] 12-3: _[Projeto - Movie Cards Library Stateful]()_:hourglass_flowing_sand: 
 
 ##### Bloco 13: React
 
-- [ ] 13-1: _Ciclo de Vida de componentes_
-- [ ] 13-2: _React Router_
-- [ ] 13-3: _[Projeto - Movie Cards Library CRUD]()_:hourglass_flowing_sand: 
+- [X] 13-1: _Ciclo de Vida de componentes_
+- [X] 13-2: _React Router_
+- [X] 13-3: _[Projeto - Movie Cards Library CRUD]()_:hourglass_flowing_sand: 
 
 ##### Bloco 14: Metodologias Ágeis
 
