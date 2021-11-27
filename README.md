@@ -114,28 +114,28 @@ Os códigos utilizados nos projetos, estarão disponiveis na linha do Projeto, c
 
 ##### Bloco 14: Metodologias Ágeis
 
-- [ ] 14-1: _Metodologias Ágeis_
-- [ ] 14-2: _[Projeto - Frontend Online Store]()_:hourglass_flowing_sand: 
+- [X] 14-1: _Metodologias Ágeis_
+- [X] 14-2: _[Projeto - Frontend Online Store]()_:hourglass_flowing_sand: 
 
 ##### Bloco 15: Testes em React - RTL (React Testing Library)
 
-- [ ] 15-1: _RTL - Primeiros passos_
-- [ ] 15-2: _RTL - Mocks e Inputs_
-- [ ] 15-2: _RTL - Testando React Router_
-- [ ] 15-4: _[Projeto - Testes em React]()_:hourglass_flowing_sand: 
+- [X] 15-1: _RTL - Primeiros passos_
+- [X] 15-2: _RTL - Mocks e Inputs_
+- [X] 15-2: _RTL - Testando React Router_
+- [X] 15-4: _[Projeto - Testes em React]()_:hourglass_flowing_sand: 
 
 ##### Bloco 16: Introdução ao Redux
 
-- [ ] 16-1: _Introdução ao Redux - O estado global da aplicação_
-- [ ] 16-2: _React com Redux_
-- [ ] 16-3: _React com Redux - Prática_
-- [ ] 16-4: _React com Redux - Actions Assíncronas_
-- [ ] 16-5: _Testes em React-Redux_
-- [ ] 16-6: _[Projeto - Trybe Wallet]()_:hourglass_flowing_sand: 
+- [X] 16-1: _Introdução ao Redux - O estado global da aplicação_
+- [X] 16-2: _React com Redux_
+- [X] 16-3: _React com Redux - Prática_
+- [X] 16-4: _React com Redux - Actions Assíncronas_
+- [X] 16-5: _Testes em React-Redux_
+- [X] 16-6: _[Projeto - Trybe Wallet]()_:hourglass_flowing_sand: 
 
 ##### Bloco 17: Projeto React
 
-- [ ] 17-1: _[Projeto - Jogo de Trivia]()_:hourglass_flowing_sand: 
+- [X] 17-1: _[Projeto - Jogo de Trivia]()_:hourglass_flowing_sand: 
 
 ##### Bloco 18: React Hooks & Context API
 
